@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Hotel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .employee {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .employee img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .employee-details {
+            flex-grow: 1;
+        }
+
+        .welcome-message {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .vip {
+            color: #FFD700; /* Gold */
+        }
+
+        .featured-employee {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .featured-employee img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Hotel</h1>
+    </header>
+
+    <main>
+        <div class="welcome-message">
+            <p>Welcome to our Hotel! We are delighted to have you here.</p>
+        </div>
+
+        <div class="featured-employee">
+            <h2>Employee of the Month</h2>
+            <div class="employee">
+                <img src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg" alt="Employee of the Month">
+                <div class="employee-details">
+                    <h3 class="vip">Jessica Smith</h3>
+                    <p>Employee of the Month - December</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Our Amazing Team</h2>
+
+        <div class="employee">
+            <img src="https://media.istockphoto.com/id/1295871372/photo/friendly-instructor-or-agent-woman-wear-grey-blazer-and-white-blouse-hold-folder-pen-looking.jpg?s=612x612&w=0&k=20&c=-V_6o-TnWbLAYy_KbtH8rO43n3TaYKfWU8zGCqdPrmc=" alt="Employee 1">
+            <div class="employee-details">
+                <h3>Jane Cruise</h3>
+                <p>Front Desk</p>
+                <p class="hidden">Special VIP Service: <span class="vip">Yes</span></p>
+            </div>
+        </div>
+
+        <div class="employee">
+            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="Employee 2">
+            <div class="employee-details">
+                <h3>Robert Johnson</h3>
+                <p>Concierge</p>
+                <p>Special VIP Service: <span class="vip">No</span></p>
+            </div>
+        </div>
+
+        <!-- Add more employee entries as needed -->
+
+    </main>
+</body>
+</html>
